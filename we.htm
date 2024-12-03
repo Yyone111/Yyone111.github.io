@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>we and future</title>
+    <style>
+        .center {
+            text-align: center; /* 水平居中 */
+        }
+        .center img {
+            display: block; /* 将图片转换为块级元素 */
+            margin: 0 auto; /* 水平居中 */
+        }
+        .mydiv {
+            border: 5px outset rgb(151, 53, 25);
+            background-color: rgb(20, 183, 169);
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+        }
+        
+        .container video {
+    border-radius: 10px; /* 设置圆角的半径 */
+}
+        .container {
+            display: flex; /* 使子元素在同一行 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            margin: 20px 0; /* 外边距 */
+            border-radius: 10px;
+        }
+
+        .image-container {
+            margin-right: 5px; /* 为图片与视频之间留出一点空隙 */
+        }
+
+        h1 {
+            font-size: 16px;
+            color: chocolate;
+            text-align: center; /* 头部居中 */
+        }
+
+        .mydiv6 {
+            background-color: bisque;
+            text-align: center;
+            height: auto; /* 自适应高度 */
+            width: 400px; /* 确保宽度指定 */
+        }
+        button[type="submit"]{
+            cursor: pointer;
+            
+        }
+        button{
+            background-color: azure;
+        }
+       form {
+        background: rgb(239, 196, 196);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: auto;
+        
+      }
+      input{
+        background-color: rgb(240, 193, 187);
+        
+        padding: 10px;
+        border: 1px solid #ccc;
+        
+        transition: border-color 0.3s, box-shadow 0.3s;
+      }
+      .accordion-container {
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 10px;
+      }
+      .accordion-item {
+        list-style: none;
+        height: 500px;
+        transition: width 0.5s;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .accordion-item:not(:hover) {
+        width: 20%;
+      }
+      .accordion-item:hover {
+        width: 800px;
+      }
+      .accordion-item:hover::after {
+        opacity: 1;
+      }
+      .accordion-item::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+      .accordion-title {
+        color: #fff;
+        font-size: 18px;
+        z-index: 2;
+      }
+      .center {
+        text-align: center; /* 水平居中 */
+      }
+      .center img {
+        display: block; /* 将图片转换为块级元素 */
+        margin: 0 auto; /* 水平居中 */
+      }
+      .myDiv {
+        border: 5px outset rgb(151, 53, 25);
+        background-color: rgb(20, 183, 169);
+
+        display: flex;
+        justify-content: center; /* 水平居中 */
+        align-items: center; /* 垂直居中 */
+      }
+      body {
+        background-image: url('./2500x1527-px-animal-ArseniXC-cat-original-signed-sky-tagme-1910243.jpg');
+        background-size: cover;
+      }
+      .myDiv2 {
+        background-color: #fff; /* 背景颜色 */
+        border-radius: 10px; /* 圆角 */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+        padding: 20px; /* 内边距 */
+        margin: 20px 0; /* 外边距 */
+        width: 300px;
+        height: 60px;
+
+        align-items: center; /* 垂直居中 */
+      }
+      
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jiayu and Yao</h1>
+    </div>
+    <hr />
+    <h1>Our future</h1>
+    <div class="center">
+        <a href="http://fangyanhua.top/">
+            <img src="微信图片_20240727184716.jpg" width="600" height="450" />
+        </a>
+    </div>
+    <br />
+    <details style="font-size: large;">
+      <summary>Jiayu and Yang Yao</summary>
+      <p><dfn title="Cui Jiayu and Yang Yao">CJYY </dfn></p>
+      <p style="color: rgb(255, 7, 7)">you jiayu 520</p>
+     
+      <p style="color: rgb(4, 1, 1)" id="c1">
+         
+      </p></details>    
+    <div class="container">
+        <div class="image-container">
+             
+            <a href="http://fangyanhua.top/">
+            <img src="微信图片_20240926154757.jpg" width="320" height="440">
+        </a>
+        </div>
+        <div >
+            <video width="320" height="480" src="./3a3e65a322d3ebee5977948cd1c1fd4e.mp4" autoplay="autoplay" loop="loop" muted> </video>
+        </div>
+    </div>
+    
+
+    
+      
+      <div class="accordion-container">
+        <div
+          class="accordion-item"
+          style="background-image: url('微信图片_20240727184716.jpg')"
+        >
+          <div class="accordion-title"></Picture> </div>
+        </div>
+        <div
+          class="accordion-item"
+          style="background-image: url('微信图片_20240926154749.jpg')"
+        >
+          <div class="accordion-title"></div>
+        </div>
+        <div
+          class="accordion-item"
+          style="background-image: url('微信图片_20240926154753.jpg')"
+        >
+          <div class="accordion-title"></div>
+        </div>
+        <div
+          class="accordion-item"
+          style="background-image: url('微信图片_20240926154757.jpg')"
+        >
+          <div class="accordion-title"></div>
+        </div>
+        <div
+          class="accordion-item"
+          style="
+            background-image: url('./dongman.jpg');
+          "
+        >
+          <div class="accordion-title"></div>
+        </div>
+      </div>
+    
+</body>
+</html>
