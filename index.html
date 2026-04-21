@@ -1,0 +1,225 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Yy | 全栈开发者个人主页 - 技能、项目与博客入口" />
+    <link rel="icon" href="./static/img/me.ico" />
+    <title>Yy · 全栈开发者</title>
+    <link rel="stylesheet" href="./static/css/1.css" />
+    <script src="./static/js/script.js" defer></script>
+  </head>
+  <body>
+    
+    <!-- QQ二维码模态框 -->
+    <div id="qqModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img
+        class="modal-content"
+        id="qqImage"
+        src="./static/img/qqnumber.jpg"
+        alt="QQ二维码"
+      />
+    </div>
+    <div class="yy-main">
+      <div class="yy-left">
+        
+        <!-- 左边个人资料栏 -->
+
+        <div class="profile-card">
+          <div class="avatar-container">
+            <img src="./static/img/head.jpg" alt="Yycjy" class="avatar" />
+            <div class="emoji-badge emoji-1">😊</div>
+            <div class="emoji-badge emoji-2">👩‍💻</div>
+          </div>
+
+          <div class="info-item">
+            <a href="https://cn.gullmap.com/is"
+              ><span class="info-icon">📍</span>
+              <span>ALLWORLD • Iceland</span></a
+            >
+          </div>
+
+          <div>
+            <a href="https://space.bilibili.com/456713538" class="domain">
+              <img
+                src="https://www.bilibili.com/favicon.ico"
+                alt="Bilibili"
+                style="width: 30px; height: 30px; vertical-align: middle"
+              />
+            </a>
+            <a href="javascript:void(0)" class="domain" onclick="showQRCode()">
+              <img
+                src="./static/img/qq.ico"
+                alt="QQ"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  vertical-align: middle;
+                  cursor: pointer;
+                "
+              />
+            </a>
+          </div>
+
+          <h3 class="title">个人标签</h3>
+          <div class="tags">
+            <span class="tag">前端</span>
+            <span class="tag">全栈</span>
+            <span class="tag">Vue</span>
+            <span class="tag">Node</span>
+            <span class="tag">CS2</span>
+            <span class="tag">生活记录</span>
+          </div>
+
+          <div class="skills-section">
+            <h3 class="title">技术技能</h3>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML/CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%;"></div>
+              </div>
+            </div>
+            <!-- 添加更多技能 -->
+          </div>
+        </div>
+
+        <!-- 右边功能栏 -->
+      </div>
+      <div class="yy-right">
+        <header>
+          <div class="welcome">
+            Hello, I'm <span class="gradientText">Yy</span>
+          </div>
+          <div class="description">
+            👦 <span class="purpleText">Full Stack</span> Developer · 记录热爱
+          </div>
+          <div class="description">
+            📝 永远在路上 · 保持输出与探索
+          </div>
+          <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+        </header>
+        <content>
+          <div class="projects-section">
+            <h3 class="title">我的项目</h3>
+            <div class="projects-grid">
+              <!-- 第一个项目卡片 -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="./static/img/Qunene.jpg" alt="个人博客系统">
+                </div>
+                <div class="project-info">
+                  <h4>个人博客系统</h4>
+                  <p>使用Vue.js和Node.js构建的全栈博客系统，支持文章发布、评论互动和后台管理。</p>
+                  <div class="project-tags">
+                    <span>Vue.js</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                  </div>
+                  <a href="#" class="project-link">查看详情</a>
+                </div>
+              </div>
+              
+              <!-- 第二个项目卡片 -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="./static/img/Qunene.jpg" alt="校园生活助手">
+                </div>
+                <div class="project-info">
+                  <h4>校园生活助手</h4>
+                  <p>课表、待办、签到、共享文件，一站式学生效率工具。</p>
+                  <div class="project-tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>SQLite</span>
+                  </div>
+                  <a href="#" class="project-link">即将上线</a>
+                </div>
+              </div>
+              
+              <!-- 第三个项目卡片 -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="./static/img/Qunene.jpg" alt="动效组件库">
+                </div>
+                <div class="project-info">
+                  <h4>动效组件库</h4>
+                  <p>为个人站点定制的轻量级 UI + 动效组件集合。</p>
+                  <div class="project-tags">
+                    <span>GSAP</span>
+                    <span>CSS</span>
+                    <span>UI/UX</span>
+                  </div>
+                  <a href="#" class="project-link">预览 Demo</a>
+                </div>
+              </div>
+              
+              <!-- 可以继续添加更多项目卡片 -->
+            </div>
+          </div>
+          <div class="function-card">
+            <div class="card-header">
+              <span class="card-icon">📝</span>
+              <h3 class="card-title">博客</h3>
+            </div>
+            <div class="card-content">
+              <p>
+                记录我的技术学习、生活感悟和日常思考。分享前端开发、Java使用。
+              </p>
+            </div>
+          </div>
+
+          <div class="function-card">
+            <div class="card-header">
+              <span class="card-icon">☁️</span>
+              <h3 class="card-title">云盘</h3>
+            </div>
+            <div class="card-content">
+              <p>
+                个人文件存储与分享空间。收集整理的技术文档、工具软件、电子书等资源。
+              </p>
+            </div>
+          </div>
+
+          <div class="function-card">
+            <div class="card-header">
+              <span class="card-icon">🔬</span>
+              <h3 class="card-title">实验室</h3>
+            </div>
+            <div class="card-content">
+              <p>我的创意实验场，展示各种有趣的HTML/CSS/JS作品和技术demo。</p>
+            </div>
+          </div>
+          <div class="function-card">
+            <div class="card-header">
+              <span class="card-icon">💡</span>
+              <h3 class="card-title">开源</h3>
+            </div>
+            <div class="card-content">
+              <p>
+                正在整理的脚手架与小工具，欢迎 Star / Issue / PR。
+              </p>
+            </div>
+          </div>
+
+          <div class="coming-soon">
+            <p>更多功能正在开发中...</p>
+            <p>敬请期待</p>
+          </div>
+        </content>
+      </div>
+    </div>
+    
+  </body>
+</html>
